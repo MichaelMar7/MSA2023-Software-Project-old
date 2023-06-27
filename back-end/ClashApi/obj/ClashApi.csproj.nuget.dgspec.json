@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj": {}
+    "C:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj": {}
   },
   "projects": {
-    "c:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj": {
+    "C:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj",
+        "projectUniqueName": "C:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj",
         "projectName": "ClashApi",
-        "projectPath": "c:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj",
+        "projectPath": "C:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj",
         "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\obj\\",
+        "outputPath": "C:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
