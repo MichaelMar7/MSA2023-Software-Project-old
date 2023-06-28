@@ -31,3 +31,8 @@ C:\Users\micha\MSA2023Folders\MSA2023-Software-Project\MSA2023-Software-Project\
 C:\Users\micha\MSA2023Folders\MSA2023-Software-Project\MSA2023-Software-Project\back-end\ClashApi\obj\Debug\net7.0\ClashApi.pdb
 C:\Users\micha\MSA2023Folders\MSA2023-Software-Project\MSA2023-Software-Project\back-end\ClashApi\obj\Debug\net7.0\ClashApi.genruntimeconfig.cache
 C:\Users\micha\MSA2023Folders\MSA2023-Software-Project\MSA2023-Software-Project\back-end\ClashApi\obj\Debug\net7.0\ref\ClashApi.dll
+C:\Users\micha\MSA2023Folders\MSA2023-Software-Project\MSA2023-Software-Project\back-end\ClashApi\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\micha\MSA2023Folders\MSA2023-Software-Project\MSA2023-Software-Project\back-end\ClashApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\micha\MSA2023Folders\MSA2023-Software-Project\MSA2023-Software-Project\back-end\ClashApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\micha\MSA2023Folders\MSA2023-Software-Project\MSA2023-Software-Project\back-end\ClashApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\micha\MSA2023Folders\MSA2023-Software-Project\MSA2023-Software-Project\back-end\ClashApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
