@@ -2,6 +2,6 @@
 {
     public enum Village
     {
-        HOME_VILLAGE, BUILDER_BASE
+        HOME, BUILDERBASE
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj": {}
+    "c:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj": {
+    "c:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj",
+        "projectUniqueName": "c:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj",
         "projectName": "ClashApi",
-        "projectPath": "C:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj",
+        "projectPath": "c:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj",
         "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\obj\\",
+        "outputPath": "c:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.8, )"
