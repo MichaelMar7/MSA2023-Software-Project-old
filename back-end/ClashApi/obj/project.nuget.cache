@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "22ZM2xJDLlCAVhGu1HQhLC6wuhvdQQ6a3OocUoKZxINZwBeXZqn93npcm05zTfFu4tys4gbHttHZ/Uz28z4bRA==",
+  "dgSpecHash": "FUG+zAitw2MKD9tOqdtt1gPqBXeibrPy1KVQfnVc5cSaB6y+2sqi78RKTpOulCWQJkzsIhNRdtdVP4SemaAZjg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj",
+  "projectFilePath": "C:\\Users\\micha\\MSA2023Folders\\MSA2023-Software-Project\\MSA2023-Software-Project\\back-end\\ClashApi\\ClashApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\micha\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
     "C:\\Users\\micha\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\7.0.8\\microsoft.aspnetcore.diagnostics.entityframeworkcore.7.0.8.nupkg.sha512",
