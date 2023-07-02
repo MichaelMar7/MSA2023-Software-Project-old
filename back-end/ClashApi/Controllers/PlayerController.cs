@@ -18,14 +18,14 @@ namespace ClashApi.Controllers
         }
 
         [HttpGet]
-        public async Task<Player> getPlayer(string tag)
+        public async Task<Player> getPlayer(string tag = "#9GYR0UYV2")
         {
-            string API_KEY = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjExZGU5YWFjLTVjMGQtNDY1YS1hYWUxLTEzYTY4NTA0YzNmMCIsImlhdCI6MTY4ODA5ODk2Miwic3ViIjoiZGV2ZWxvcGVyL2YwNDY0M2VlLTkyMTEtYTUyMi00ODkwLTUwYjZkNDc3M2I3MSIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjIwMi4zNi4yNDQuMiIsIjIwMi4zNi4yNDQuMTAiXSwidHlwZSI6ImNsaWVudCJ9XX0.NfYqydpLqKpYp-RHOkxPEK8hMjYDG_hWDJCOXY9RARuiSvabpIkM22qpFsN_bTsWU1AkhUE4a3fFkWBfhjmSOQ";
+            string API_KEY = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImFhY2EyYTMzLTMwMWUtNDg1YS05ZWI0LWQ1ZTAyNWUzYzZkOCIsImlhdCI6MTY4ODI2Mzg0NSwic3ViIjoiZGV2ZWxvcGVyL2YwNDY0M2VlLTkyMTEtYTUyMi00ODkwLTUwYjZkNDc3M2I3MSIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjQ1Ljc5LjIxOC43OSJdLCJ0eXBlIjoiY2xpZW50In1dfQ.D-kutC64vNdxtSOBYcLj0FOk06iSvSEYTZGzjO34nPYL_cC82jGH3FUPrM4e4Jl-57mFu578ucw3-g4--EgSYQ";
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", API_KEY);
 
             Player player = null;
             tag = tag.Substring(1, tag.Length-1);
-            string url = $"https://api.clashofclans.com/v1/players/%23{tag}";
+            string url = $"https://cocproxy.royaleapi.dev/v1/players/%23{tag}";
 
             HttpResponseMessage response = await _client.GetAsync(url);
 
