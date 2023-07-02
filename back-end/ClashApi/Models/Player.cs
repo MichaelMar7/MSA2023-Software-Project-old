@@ -1,4 +1,6 @@
-﻿namespace ClashApi.Models
+﻿using System.Text.Json.Serialization;
+
+namespace ClashApi.Models
 {
     public class Player
     {
@@ -16,8 +18,8 @@
         public int builderBaseTrophies { get; set; }
         public int bestBuilderBaseTrophies { get; set; }
         public int versusBattleWins { get; set; }
-        public Role role { get; set; }
-        //public WarPreference warPreference { get; set; }
+        public string role { get; set; }
+        //public string warPreference { get; set; }
         //public int donations { get; set; }
         //public int donationsReceived { get; set; }
         //public int clanCapitalContributions { get; set; }
