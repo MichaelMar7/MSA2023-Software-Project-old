@@ -66,7 +66,7 @@ export const PlayerCard = ({
         <CardContent>
             <p> Experience: {expLevel} </p>
             <p> Town Hall: {townHallLevel} </p> 
-            <img src={thImage()} alt={townHallLevel.toString()} width="50" />
+            <img src={thImage()} alt={townHallLevel.toString()} width="100" />
             <p> TH Weapon Level: {townHallWeaponLevel} </p> 
             <br/>
             <p> Trophies: {trophies}, &nbsp; Best Trophies: {bestTrophies} </p>
@@ -74,7 +74,7 @@ export const PlayerCard = ({
             <p> War Stars: {warStars} </p>
             <br/>
             <p> Builder Hall: {builderHallLevel} </p> 
-            <img src={bhImage()} alt={builderHallLevel.toString()} width="50" />
+            <img src={bhImage()} alt={builderHallLevel.toString()} width="100" />
             <p> Builder Base Trophies: {builderBaseTrophies}, &nbsp; Best Builder Base Trophies: {bestBuilderBaseTrophies} </p>
             <p> Builder Base Batle Wins: {versusBattleWins} </p>
         </CardContent>

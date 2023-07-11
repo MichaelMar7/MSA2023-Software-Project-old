@@ -3,13 +3,21 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import {Button} from "./stories/Button/Button";
 import {PlayerCard} from "./stories/PlayerCard/PlayerCard";
+import { useGetPlayerQuery } from "./api/apiSlice" ;
+
+//import {useDispatch} from "react-redux";
 
 function App() {
+    //const dispatch = useDispatch();
+
     const [playerTag, setPlayerTag] = useState("");
     const [playerInfo, setPlayerInfo] = useState<undefined | any>(undefined);
 
     const BASE_URL = "https://localhost:7071/api"
+
+    //const { data, error, isLoading } = useGetPlayerQuery(playerTag)
 
     return (
         <div>
@@ -19,7 +27,7 @@ function App() {
                 <label>Player Tag</label>
                 <input type="text" id="player-tag" name="player-tag" onChange={(e) => setPlayerTag(e.target.value)} />
                 <br/>
-                <button onClick={search}>Search</button>
+                <Button label="Search" size="small" primary={true} onClick={search} />
             </div>
 
             {playerInfo === undefined ? (
@@ -82,8 +90,9 @@ function App() {
     );
 
     function search() {
+        //setPlayerInfo(data);
         axios
-            .get(BASE_URL + "/Player?tag=" + encodeURIComponent(playerTag))
+            .get(BASE_URL + "/Player/" + encodeURIComponent(playerTag))
             .then((res) => {
                 setPlayerInfo(res.data);
             })
@@ -93,13 +102,15 @@ function App() {
             });
     }
 
+    function search2() {
+        //setPlayerInfo(data);
+    }
+
     function thImage() {
         const BASE_URL_pre = "https://coc.guide/static/imgs/other/town-hall-";
         const BASE_URL_suf = ".png";
         return (BASE_URL_pre.concat(playerInfo.townHallLevel).concat(BASE_URL_suf));
     }
 }
-
-
 
 export default App;
