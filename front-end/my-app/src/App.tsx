@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import {PlayerCard} from "./stories/PlayerCard/PlayerCard";
+
 function App() {
     const [playerTag, setPlayerTag] = useState("");
     const [playerInfo, setPlayerInfo] = useState<undefined | any>(undefined);
@@ -23,6 +25,35 @@ function App() {
             {playerInfo === undefined ? (
                 <p> Player not found </p>
             ) : (
+                <div>
+                    <PlayerCard 
+                    tag={playerInfo.tag} 
+                    name={playerInfo.name} 
+                    townHallLevel={playerInfo.townHallLevel} 
+                    townHallWeaponLevel={playerInfo.townHallWeaponLevel} 
+                    expLevel={playerInfo.expLevel} 
+                    trophies={playerInfo.trophies} 
+                    bestTrophies={playerInfo.bestTrophies}
+                    warStars={playerInfo.warStars}
+                    attackWins={playerInfo.attackWins}
+                    defenseWins={playerInfo.defenseWins}
+                    builderHallLevel={playerInfo.builderHallLevel}
+                    builderBaseTrophies={playerInfo.builderBaseTrophies}
+                    bestBuilderBaseTrophies={playerInfo.bestBuilderBaseTrophies}
+                    versusBattleWins={playerInfo.versusBattleWins}
+                    role={playerInfo.role} />
+                </div>
+                /*
+    warStars: number,
+    : number,
+    : number,
+    : number,
+    : number,
+    : number,
+    : number,
+    : string,
+    */
+                /*
                 <div>
                     <p> { playerInfo.name } </p>
                     <p> Town Hall: { playerInfo.townHallLevel } </p>
@@ -45,6 +76,7 @@ function App() {
                         </div>
                     ) }
                 </div>
+                */
             )}
         </div>
     );
