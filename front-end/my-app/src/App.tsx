@@ -7,17 +7,13 @@ import {Button} from "./stories/Button/Button";
 import {PlayerCard} from "./stories/PlayerCard/PlayerCard";
 import { useGetPlayerQuery } from "./api/apiSlice" ;
 
-//import {useDispatch} from "react-redux";
-
 function App() {
-    //const dispatch = useDispatch();
-
     const [playerTag, setPlayerTag] = useState("");
     const [playerInfo, setPlayerInfo] = useState<undefined | any>(undefined);
 
     const BASE_URL = "https://localhost:7071/api"
 
-    //const { data, error, isLoading } = useGetPlayerQuery(playerTag)
+    const { data, error, isLoading } = useGetPlayerQuery(playerTag)
 
     return (
         <div>
@@ -27,7 +23,7 @@ function App() {
                 <label>Player Tag</label>
                 <input type="text" id="player-tag" name="player-tag" onChange={(e) => setPlayerTag(e.target.value)} />
                 <br/>
-                <Button label="Search" size="small" primary={true} onClick={search} />
+                <Button label="Search" size="small" primary={true} onClick={search2} />
             </div>
 
             {playerInfo === undefined ? (
@@ -51,40 +47,6 @@ function App() {
                     versusBattleWins={playerInfo.versusBattleWins}
                     role={playerInfo.role} />
                 </div>
-                /*
-    warStars: number,
-    : number,
-    : number,
-    : number,
-    : number,
-    : number,
-    : number,
-    : string,
-    */
-                /*
-                <div>
-                    <p> { playerInfo.name } </p>
-                    <p> Town Hall: { playerInfo.townHallLevel } </p>
-                    <img src={thImage()} alt="" />
-                    <p> Trophies: { playerInfo.trophies } </p>
-                    { playerInfo.league === null ? (
-                        <p>No League</p>
-                    ) : (
-                        <div>
-                            <p>{ playerInfo.league.name }</p>
-                            <img src={ playerInfo.league.iconUrls.small } alt="" />
-                        </div>
-                    ) }
-                    { playerInfo.clan === null ? (
-                        <p>No Clan</p>
-                    ) : (
-                        <div>
-                            <p>{ playerInfo.clan.name }</p>
-                            <img src={ playerInfo.clan.badgeUrls.small } alt="" />
-                        </div>
-                    ) }
-                </div>
-                */
             )}
         </div>
     );
@@ -103,7 +65,7 @@ function App() {
     }
 
     function search2() {
-        //setPlayerInfo(data);
+        setPlayerInfo(data);
     }
 
     function thImage() {
